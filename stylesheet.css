@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital@1&display=swap'); 
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: "museo-slab","sans-serif";
+    background: #ffffff;
+    overflow-x: hidden;
+    background: #262b2e;
+    color:white;
+}
+p,section ul li,.width50>h3{
+    text-align:justify;
+    color:#e6e6ff;
+}
+
+.date h2{
+    color:#e6e6ff;
+}
+.width50>h3{
+    padding:0px 40px;
+}
+/* navbar */
+.logo{
+    color:white;
+    font-size: 34px;
+    font-family: 'Andika', sans-serif;
+    font-style: italic;
+    margin:0 0 0 20px;
+}
+#navbar{
+    display: flex;
+    position: fixed;
+    height: 10vh;
+    color:black;
+    /* background-color: black; */
+    
+    font-size: 1.3rem;
+    width: 100%;
+    top:0;
+    z-index: 5;
+    align-items: center;
+    justify-content: space-around;
+}
+#navbar::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    opacity:0.3;
+    background-color:var(--navBack,black);
+    transition: all 0.5s ease;
+    
+    z-index: -1;
+}
+#navbar img {
+    width: 100px;
+    filter: invert();
+    margin-top: 5px;
+}
+#NavList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+#NavList li{
+    list-style-type: none;
+    
+}
+#NavList li a{
+    text-decoration: none;
+    color:var(--navColor,white);
+    padding: 4px 15px;
+    margin:0px 15px;
+}
+/*
+#NavList li a:hover{
+     background-color: #dc6b6b; 
+    background-color: var(--hoverBack,black);
+    color:var(--hoverColor,white);
+    border-radius:30px;
+}
+*/
+#NavList li a:hover{
+    /* background-color: #dc6b6b; */
+    /* background-color: var(--hoverBack,rgba(5, 4, 33, 0.957)); */
+    color:var(--hoverColor,#cdcdff);
+    border-radius:20px;
+}
+
+ /* Canvas Background */
+
+#wrapper {
+  height:100vh;
+  width:100%;
+  text-align: center;
+  display: table;
+  position:relative;
+}
+
+#title {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#title h2 {
+  color: #fff;
+  font-size: 45px;
+  font-family: "museo-slab";
+}
+
+#title h3 {
+  color: #fff;
+  font-size: 25px;
+  font-family: "museo-sans";
+  font-weight: 300
+}
+
+
+#wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1950px;
+  height: auto; 
+}
+
+#canvas {
+  z-index: -8;
+}
+#canvasbg {
+  z-index: -20;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+/* Different Sections */
+#imp_dates,#AboutConference,#Advantages,#AboutUS,#MissionsOfJIIC,#AboutJIIT{
+    padding:0px 300px;
+    font-size: 1.25rem;
+}
+#AboutJIIT{
+    margin-bottom: 80px;
+}
+
+.text{
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+ 
+ .text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.text a {
+    color: rgb(0, 195, 255);
+}
+
+.text h2{
+    font-size: 3em;
+}
+
+.text h3{
+    font-size: 2em;
+}
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Utility Classes */
+.btn {
+    /* background-color: #dc6b6b; */
+    background-color: #f2f2f2;
+    /* color:#f2f2f2; */
+    height: 29px;
+    width: 101px;
+    border: 1px solid white;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    /* background-color:#dea9a9; */
+    background-color: white;
+}
+.width50{
+    width: 50%;
+}
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.columnFlexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: #262b2e;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+

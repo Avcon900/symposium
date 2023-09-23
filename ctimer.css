@@ -1,0 +1,151 @@
+
+.timerbackground{
+  background-color: ;
+  
+}
+
+.body1{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.body1{overflow: hidden;}
+.body1{
+align-content: center;
+display: flex;
+flex-direction: colum;
+justify-content: center;
+margin: auto;
+}
+
+
+.container{
+  z-index: 44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0  3rem;
+  position: relative;
+  justify-content: space-around;
+  max-height: 1000px;
+  
+
+}
+
+.heading{
+  padding: 1rem 0rem;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+
+}
+.heading>h1{
+  color:#cdcdff;
+}
+.section-title::after {
+  content: '';
+  margin: 0.3em auto 0 auto;
+  display: block;
+  width: 1.5em;
+  border-bottom: 0.2em solid #807ae8;
+}
+.heading h1,h2,h3{
+  font-weight: lighter;
+  letter-spacing: 3px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-text-fill-color:transparent;
+}
+
+
+
+
+.countdown-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+}
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-font{
+  display: flex;
+  background: linear-gradient(hsl(235, 16%, 15%) 50%,
+  hsl(237,21%, 20%)50%);
+  height: 90px;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px 3px rgba(0,0,0,0.377);
+  border-radius: 10px;
+  z-index: 44;
+  position: relative;
+  transition: all .4s ease-in;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.countdown-font.active{
+  transform: translateY(360deg);
+}
+.countdown-font::after{
+  position: absolute;
+  content: "";
+  width: 8%;
+  height: 10%;
+  background: hsl(346, 27%, 7%);
+  left: 0px;
+  top: 44%;
+  border-radius: 0 50% 80% 0;
+
+
+}
+
+.countdown-font::before{
+  position: absolute;
+  content: "";
+  width: 8%;
+  height: 10%;
+  background: hsl(348, 26%,7%);
+  right: 0px;
+  top: 44%;
+  border-radius: 50% 0 0 80%;
+}
+
+.text1{
+  font-size: 2.3rem;
+  color: hsl(345,95%,68%);
+  cursor: pointer;
+  transition: all .4s ease-in;
+}
+
+
+
+.description{
+  margin-top: 1rem;
+   font-size: 0.8rem;
+   color: rgb(109, 108, 108);
+   letter-spacing: 3px;
+}
+
+#timer{
+  margin-bottom: 36px;
+}
+.imp_dates{
+  margin-top: 10px;
+
+}
+.date{
+  line-height: 1.5;
+  font-size: 1.1rem;
+  letter-spacing: 0px;
+}

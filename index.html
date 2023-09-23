@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Hello frind follow my id and like my page-->
+  <title>Symposium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Andika:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet" meta
+    name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="ctimer.css">
+  <script src="jscript.js"></script>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body onload="myFunction()">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <nav id="navbar" class="flexContainer">
+      <!-- <div class="flexContainer"> -->
+      <!-- <img src="./logo.JPG" alt="#"> -->
+      <div class="logo">JIIC</div>
+      <ul id="NavList">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./committies.html">Committies</a></li>
+        <li><a class="active" href="./rules.html">Rules</a></li>
+        <li><a href="./speaker.html">Speaker</a></li>
+        <li><a href="./contact us.html">Contact Us</a></li>
+      </ul>
+      <button class="btn">Register Here</button>
+      <!-- </div> -->
+    </nav>
+
+
+    <div id="wrapper" style="z-index: -4;">
+      <div id="title" >
+        <div>
+          <h2>SYMPOSIUM</h2>
+          <h3>Together we can make a difference in the world of academia
+          </h3>
+  
+        </div>
+      </div>
+      <canvas id="canvas" width="1950px" height="800px"></canvas>
+      <canvas id="canvasbg" width="1950px" height="800px"></canvas>
+    </div>
+
+   
+<div class="timerbackground">
+    <section class="body1" id="timer">
+      <div class="container">
+        <div class="heading">
+          <h1 class="section-title">COMING SOON</h1>
+        </div>
+        <div class="countdown-wrapper">
+          <div class="card">
+            <div class="countdown-font">
+              <h2 class="text1 days">08</h2>
+            </div>
+            <h2 class="description">DAYS</h2>
+          </div>
+          <div class="card ">
+            <div class="countdown-font" id="hour">
+              <h2 class="text1 hours">23</h2>
+            </div>
+            <h2 class="description">HOURS</h2>
+          </div>
+          <div class="card ">
+            <div class="countdown-font" id="minute">
+              <h2 class="text1 minutes">55</h2>
+            </div>
+            <h2 class="description">MINUTES</h2>
+          </div>
+          <div class="card">
+            <div class="countdown-font" id="second">
+              <h2 class="text1 seconds">41</h2>
+            </div>
+            <h2 class="description">SECONDS</h2>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- IMPORTANT DATES -->
+    <section id="imp_dates" class="imp_dates">
+      <div class="heading">
+        <h1 class="section-title">IMPORTANT DATES</h1>
+      </div>
+      <div class="date heading">
+        <h2>15/12/2022</h2>
+        <h2>THE BEGINNING OF SYMPOSIUM!</h2>
+      </div>
+
+
+    </section>
+  </div>
+    <!-- about us wagerah -->
+  
+
+    <section id="AboutConference">
+      <div class="heading">
+        <h1 class="section-title">What is Symposium?</h1>
+      </div>
+      <p>
+        SYMPOSIUM, one of JIIC's major events, is here for young and creative minds brimming with ideas. A platform for
+        young entrepreneurs or anyone with an idea to turn their vision into a reality. To convert knowledge into impact
+        and to propel innovation. A location where anyone can display their ideas.
+    
+      The conference attracts top periodicals and publishing houses. And some of the best ideas are then published at
+        a bare minimum cost in these prestigious publications, giving the candidate an edge in his start-up.
+      Our platform brings together people from all over the world who feel their ideas are significant enough to
+        share with others, as well as a supportive atmosphere. A panel of experts will provide you with the finest
+        guidance for leveraging growth strategies as well as valuable insights on your ideas. 
+      </p>
+    </section>
+
+
+
+
+
+    <section id="Advantages">
+      <div class="heading">
+        <h1 class="section-title">Advantages Of Participating</h1>
+      </div>
+      <ul>
+        <li> The major benefit Is that the published ideas cannot be replicated by others since they have already been
+          published under your name. It serves as an IPR (Intellectual property rights).</li>
+        <li>Inspiring presentations from business executives to assist candidates in developing their ideas.</li>
+        <li>A supportive environment with like-minded people is offered to help you turn your ideas into reality.</li>
+      </ul>
+    </section>
+
+   
+
+    <section id="AboutUS">
+      <div class="heading">
+        <h1 class="section-title">What is JIIC?</h1>
+      </div>
+      <p>
+        Jaypee Innovation and Incubation Center (JIIC), is established at Jaypee Institute of Information Technology,
+        Noida to cultivate innovative and entrepreneurial ecosystem by providing Incubator and accelerated services.
+        JIIC is envisioned to bring forth entrepreneurial thoughts and knowledge by creating opportunity for Students
+        and Faculty of JIIT along with the leaders from the industry to lay the stone of entrepreneurship opportunities.
+      </p>
+    </section>
+
+
+
+    <section id="MissionsOfJIIC">
+      <div class="heading">
+        <h1 class="section-title">Missions and Goals Of JIIC</h1>
+      </div>
+      <div class="flexContainer">
+
+        <div class="columnFlexContainer width50">
+          <h3>JIIC works on various missions such as:</h3>
+        <ul>
+          <li> It generates Intellectual Property Rights(IPR).</li>
+          <li> It motivates students to think innovative that is out of the box.</li>
+          <li> It ensures the setting up of institutional innovative research goals.</li>
+          <li> It encourages interdisciplinary research.</li>
+          <li> It promotes participative innovative leadership.</li>
+          <li> It becomes the catalyst for a step change in the JIIT's innovation capability.</li>
+        </ul>
+        </div>
+        
+        <div class="columnFlexContainer width50">
+          <h3>There are various goals of JIIC such as to:</h3>
+          <ul>
+            <li>Provide facilities and high end infrastructure Technology,focused Incubator where innovation consulting and
+              other research oriented opportunities can grow.</li>
+            <li>Share and exchange of ideas, thoughts and knowledge,there by making a healthy ecosystem for entrepreneurs,
+              startups and provides opportunity to new innovative ideas.</li>
+            <li>Create opportunities for the new innovative and startup oriented ideas in JIIT.</li>
+          </ul>
+  
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="AboutJIIT">
+      <div class="heading">
+        <h1 class="section-title">About JIIT</h1>
+      </div>
+      <p>
+        Jaypee Institute of information technology is one of the leading institutions in the field of science and
+        business. The institute serves as a stepping stone for students from all over the country. The main campus,
+        situated in one of the major cities of india- Noida, sector 62 boasts it's modern infrastructure, top notch
+        amenities and a lush green campus.
+      
+        The institute provides undergraduate and postgraduate degrees in various fields of study ranging from science
+        and technology to business.
+     
+        The students are provided with the most prestigious opportunities to pivot their careers in the right direction.
+        The faculty at JIIT believes in the absolute potential of each and every individual and is willing to put in the
+        hours for the future of their students.
+     
+        The institute has been graced with some of the best teachers in their respective fields who make every learning
+        experience better.
+      
+        While being a top institution for science and tech, JIIT also provides a solid environment for students with
+        entrepreneurial endeavors.
+      
+        This is facilitated by the numerous societies and clubs that are a part of the ecosystem at JIIT. These clubs
+        act as creative, academic and entrepreneurial outlets for students where they can showcase their true potential
+        in amalgamation with their intellectual abilities.
+      
+        Here at JIIT, students are encouraged to pursue their passions, to grasp the opportunities that come their way
+        and to make the best of them.
+      </p>
+    </section>
+
+    <div id="footer">
+      <footer style="text-align: center; bottom:0;">
+        <hr>
+          Copyright &copy; JIIT 
+          <p style="text-align: center;">All rights reserved!</p> 
+          <p style="text-align: center; margin-bottom: 0px;" >Developed by Yasir Khan, Aayush Walia and Anshika Kamboj</p>
+        </footer>
+  </div>
+
+
+    <script src="./canvasbg.js"></script>
+    <script src="ctimer.js"></script>
+</body>
+
+</html>

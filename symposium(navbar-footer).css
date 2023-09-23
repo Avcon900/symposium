@@ -1,0 +1,148 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+/* navbar */
+.logo{
+  color:white;
+  font-size: 34px;
+  font-family: 'Andika', sans-serif;
+  font-style: italic;
+  margin:0 0 0 20px;
+}
+#navbar{
+  display: flex;
+  position: fixed;
+  height: 10vh;
+  color:black;
+  /* background-color: black; */
+  
+  font-size: 1.3rem;
+  width: 100%;
+  top:0;
+  z-index: 5;
+  align-items: center;
+  justify-content: space-around;
+}
+#navbar::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  opacity:0.3;
+  background-color:var(--navBack,black);
+  transition: all 0.5s ease;
+  
+  z-index: -1;
+}
+#navbar img {
+  width: 100px;
+  filter: invert();
+  margin-top: 5px;
+}
+#NavList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+#NavList li{
+  list-style-type: none;
+  
+}
+#NavList li a{
+  text-decoration: none;
+  color:var(--navColor,white);
+  padding: 4px 15px;
+  margin:0px 15px;
+}
+/*
+#NavList li a:hover{
+   background-color: #dc6b6b; 
+  background-color: var(--hoverBack,black);
+  color:var(--hoverColor,white);
+  border-radius:30px;
+}
+*/
+#NavList li a:hover{
+  /* background-color: #dc6b6b; */
+  /* background-color: var(--hoverBack,rgba(5, 4, 33, 0.957)); */
+  color:var(--hoverColor,#cdcdff);
+  border-radius:20px;
+}
+
+
+#comingsoon{
+  display: flex;
+  height: 100vh;
+  background: url(dark-4916164.jpg) center center/cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  color:whitesmoke;
+  
+  letter-spacing: 3px;
+  font-family: "museo-slab","sans-serif";
+  padding: 1rem 0rem;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+}
+/* footer*/
+#footer {
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+}
+#ContactUs
+  { position: fixed;
+    bottom: 50px;;
+    color:white;
+    width:100%;
+    height:100%;
+    background-color: rgb(34,38,53);
+  }
+#ContactUsDiv
+  {
+    align-items: flex-start;
+  }
+#ContactUs .columnFlexContainer
+  {
+    text-align: center;
+  }
+.flexContainer
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+.columnFlexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.btn {
+  /* background-color: #dc6b6b; */
+  background-color: #f2f2f2;
+  /* color:#f2f2f2; */
+  height: 29px;
+  width: 101px;
+  border: 1px solid white;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  /* background-color:#dea9a9; */
+  background-color: white;
+}
